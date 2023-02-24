@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  cursor: pointer;
+  color: var(--white);
+  text-decoration: none;
+}
+.grid-container {
+  display: grid;
+  grid:
+    "a a" 100px
+    "b c" 1fr
+    / 200px 1fr;
+  min-height: 100vh;
+}
+.container-index {
+  display: grid;
+  grid:
+    "a " 100px
+    "m-index" 1fr
+    /1fr;
+  height: 100vh;
+}
+
+/* header  */
+
+header {
+  grid-area: a;
+  background: url(../img/font2.jpg) center center / cover;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 4rem;
+}
+header h1 {
+  color: var(--beige);
+}
+
+/* aside */
+
+aside {
+  grid-area: b;
+  background: var(--graylight);
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  border-right: 1px solid var(--dark);
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1px;
+}
+
+aside h2 {
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+aside li {
+  font-size: 2.5rem;
+}
+aside .contact-p {
+  color: var(--dark);
+}
+aside .aqua {
+  background: url(../img/aquarelle.jpg) center center / cover;
+  height: 150px;
+}
+aside p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  color: var(--beige);
+}
+aside .past {
+  background: url(../img/pastel.jpg) center center / cover;
+  height: 150px;
+}
+aside .peint {
+  background: url(../img/pinceau.jpg) center center / cover;
+  height: 150px;
+}
+
+/* main  */
+
+main {
+  grid-area: c;
+  background: var(--graylight);
+}
+.main-index {
+  grid-area: m-index;
+}
+main .aqua {
+  background: url(../img/aquarelle.jpg) center center / cover;
+}
+main .past {
+  background: url(../img/pastel.jpg) center center / cover;
+}
+main .peint {
+  background: url(../img/pinceau.jpg) center center / cover;
+}
+main .past,
+main .peint,
+main .aqua {
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .past a,
+main .peint a,
+main .aqua a {
+  font-size: 4rem;
+}
+main .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+main .box {
+  max-width: 300px;
+  padding: 1rem 0.2rem;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+main .box2 {
+  border: 1px solid black;
+  box-shadow: 2px 2px black;
+  padding: 1rem;
+}
+main .img {
+  max-width: 100%;
+  margin: auto;
+}
+main .titre {
+  text-align: center;
+  font-size: 2.5rem;
+}
+main .taille {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* image zoom seconde edition  */
+
+.containerbig2 {
+  display: grid;
+  grid:
+    "img titre" 50px
+    "img taille" 50px
+    "img histoire" 1fr
+    "img inspi" 1fr
+    / 1fr 400px;
+
+  padding-top: 2rem;
+}
+.titrebig2 {
+  grid-area: titre;
+  text-align: center;
+  font-size: 3rem;
+  height: 100%;
+}
+.taillebig2 {
+  grid-area: taille;
+  text-align: center;
+}
+.imgbig2 {
+  grid-area: img;
+  grid-area: 3/1/5/2;
+  /*margin: auto;*/
+  margin-left: 3rem;
+}
+.histoire2 {
+  grid-area: histoire;
+}
+.histoire2 h4,
+.inspiration2 h4,
+.taillebig2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.histoire2 p,
+.inspiration2 p {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+.inspiration2 {
+  grid-area: inspi;
+}
+.img-inspi {
+  width: 200px;
+}

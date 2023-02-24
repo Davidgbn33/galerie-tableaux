@@ -1,0 +1,50 @@
+h1 {
+  font-size: 3rem;
+}
+header {
+  padding-top: 3.2rem;
+}
+main .past,
+main .peint,
+main .aqua {
+  height: 230px;
+}
+
+.grid-container {
+  grid:
+    "a " 100px
+    "b " 200px
+    "c " auto
+    / 1fr;
+}
+aside h2 {
+  display: none;
+}
+aside .aqua,
+aside .past,
+aside .peint,
+aside p {
+  height: 50px;
+}
+.containerbig2 {
+  grid:
+    "titre" 50px
+    "taille" 50px
+    "img" 1fr
+    "histoire" auto
+    "inspi" auto
+    / 1fr;
+}
+.imgbig2 {
+  max-width: 400px;
+  grid-area: 3/1/4/2;
+}
+.histoire2,
+.inspiration2 {
+  padding: 2rem 1rem 0 1rem;
+}
+.histoire2 p,
+.inspiration2 p {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
