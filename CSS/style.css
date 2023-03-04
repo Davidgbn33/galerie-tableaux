@@ -41,7 +41,6 @@ header {
   grid-area: a;
   background: url(../img/font2.jpg) center center / cover;
   text-align: center;
-  padding-top: 1rem;
   font-size: 4rem;
 }
 header h1 {
