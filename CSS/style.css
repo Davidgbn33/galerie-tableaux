@@ -163,7 +163,7 @@ main .taille {
   grid:
     "img titre" 50px
     "img taille" 50px
-    "img histoire" 1fr
+    "img histoire" 300px
     "img inspi" 1fr
     / 1fr 400px;
 
